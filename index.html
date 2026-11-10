@@ -1,82 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CostSaves Rewards Program</title>
-  <meta name="description" content="Get your costco rewards card now.">
+  <title>CostSaves Rewards | Gift Card Offers</title>
+  <meta name="description" content="Learn how to qualify for gift card rewards by completing eligible offers.">
 
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=mb8vghplDiriSd0snS1icmKWpUuMmEb9GFwBH4044C7KmYNLNYopxJTu3WyL0AAFcIcWTHl703kjQJtTS2-ZAF_e0TnCnCE4gra8a7Ypp4lorD6fOdc_lP14NMqYS0iyvlljUVu-KU6vPnnRrUZ226e1KJKmwOfBoQlFYcQzbqJ_KkoLqv7vpQdc5_84r3vtdn_-42USBLNNfPeA6jwZkpWgHAFhunSXSlfNM1uQx6ksv0_KkzntxbHwIc_7I5xTEME5L_blmhBDHi0wND-sccJp5ngyhZmUanC6t8EZDhUCwnxa7zbi-Cr6xmrcAeLo" charset="UTF-8"></script><style>
+  <link rel="preload" href="./logo.png" as="image">
+
+  <style>
     :root {
-      --page-start: #fff1f5;
-      --page-end: #eff6ff;
+      --red: #dc2626;
       --text: #111827;
       --muted: #64748b;
-      --card: #ffffff;
-      --red: #dc2626;
-      --red-hover: #c91f1f;
-      --radius: 16px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body {
-      margin: 0;
-      min-height: 100%;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
+    html {
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      background: linear-gradient(135deg, var(--page-start), var(--page-end));
-      min-height: 100vh;
+      margin: 0;
+      background: #f8fafc;
+      color: var(--text);
     }
 
     .page {
-      width: 100%;
-      max-width: 420px;
+      width: min(100% - 32px, 420px);
       margin: 0 auto;
-      padding: 48px 16px;
-    }
-
-    .logo-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 24px;
+      padding: 24px 0 40px;
     }
 
     .logo {
-      width: 100%;
-      max-width: 360px;
-      height: 80px;
-      object-fit: contain;
+      display: block;
+      width: min(100%, 320px);
+      height: auto;
+      margin: 0 auto 20px;
     }
 
     .eyebrow {
-      margin: 0 0 4px;
+      margin: 0 0 6px;
       text-align: center;
-      font-size: 18px;
       color: var(--muted);
+      font-size: 16px;
     }
 
     h1 {
-      margin: 0 0 32px;
+      margin: 0 0 24px;
       text-align: center;
-      font-size: 24px;
-      line-height: 1.3;
+      font-size: 28px;
+      line-height: 1.25;
     }
 
     .card {
-      background: var(--card);
-      border-radius: var(--radius);
       padding: 24px;
-      margin-bottom: 32px;
-      box-shadow: 0 4px 60px rgba(0,0,0,.08);
+      margin-bottom: 24px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
     }
 
-    .card h2 {
-      margin: 0 0 24px;
+    h2 {
+      margin: 0 0 20px;
       font-size: 20px;
     }
 
@@ -89,16 +81,19 @@
     .steps li {
       display: flex;
       gap: 12px;
-      margin-top: 16px;
-      line-height: 1.55;
+      margin-bottom: 16px;
+      font-size: 15px;
+      line-height: 1.5;
     }
 
-    .steps li:first-child { margin-top: 0; }
+    .steps li:last-child {
+      margin-bottom: 0;
+    }
 
-    .step-number {
-      flex: 0 0 auto;
+    .number {
       color: var(--red);
       font-weight: 700;
+      flex-shrink: 0;
     }
 
     .cta {
@@ -106,28 +101,26 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      min-height: 64px;
-      margin: 0 0 40px;
-      padding: 14px 24px;
-      border: 0;
-      border-radius: var(--radius);
+      min-height: 60px;
+      margin-bottom: 32px;
+      padding: 14px;
       background: var(--red);
+      border-radius: 12px;
       color: #fff;
-      font: inherit;
       font-size: 20px;
       font-weight: 700;
+      text-align: center;
       text-decoration: none;
-      cursor: pointer;
-      transition: background .15s ease, transform .15s ease;
     }
 
-    .cta:hover { background: var(--red-hover); }
-    .cta:active { transform: scale(.99); }
+    .cta:active {
+      background: #b91c1c;
+    }
 
     .faq-title {
-      margin: 0 0 32px;
+      margin: 0 0 24px;
       text-align: center;
-      font-size: 20px;
+      font-size: 19px;
       font-style: italic;
     }
 
@@ -144,74 +137,108 @@
     .faq-item p {
       margin: 0;
       color: var(--muted);
+      font-size: 14px;
       line-height: 1.6;
     }
 
     footer {
+      margin-top: 32px;
       text-align: center;
       color: var(--muted);
-      font-size: 14px;
-    }
-
-    @media (min-width: 768px) {
-      .page { padding-top: 48px; }
-      .logo { height: 96px; }
-      h1 { font-size: 30px; }
-      .card { padding: 32px; }
+      font-size: 13px;
     }
   </style>
 </head>
 
 <body>
   <main class="page">
-    <div class="logo-wrap">
-      <img class="logo" src="./logo.png" alt="CostSaves Rewards Program">
-    </div>
 
-    <p class="eyebrow">Complete the Steps below to claim your</p>
-    <h1>$700 Costco Gift Card</h1>
+    <img
+      class="logo"
+      src="./logo.png"
+      alt="CostSaves Rewards"
+      width="320"
+      height="80"
+      fetchpriority="high"
+    >
+
+    <p class="eyebrow">
+      Complete the steps below to qualify for a
+    </p>
+
+    <h1>$700 Costco Gift Card Offer</h1>
 
     <section class="card">
       <h2>Steps to Qualify</h2>
+
       <ol class="steps">
-        <li><span class="step-number">1.</span><span>Click on "Start Now"</span></li>
-        <li><span class="step-number">2.</span><span>Enter your email and basic information</span></li>
-        <li><span class="step-number">3.</span><span>Complete 5 recommended deals (required)</span></li>
-        <li><span class="step-number">4.</span><span>Claim your $700 Costco Gift Card</span></li>
+        <li>
+          <span class="number">1.</span>
+          <span>Click on "Start Now"</span>
+        </li>
+        <li>
+          <span class="number">2.</span>
+          <span>Enter your email and basic information</span>
+        </li>
+        <li>
+          <span class="number">3.</span>
+          <span>Complete the required eligible deals</span>
+        </li>
+        <li>
+          <span class="number">4.</span>
+          <span>Follow the reward provider's instructions to claim your gift card if you qualify</span>
+        </li>
       </ol>
     </section>
 
-    <!-- Replace # below with your destination URL -->
-    <a class="cta" id="start-btn" data-url="https://giftclick.org/?offer_id=1322&aff_id=58197">START NOW</a>
+    <a
+      class="cta"
+      href="https://giftclick.org/?offer_id=1322&amp;aff_id=58197"
+      rel="nofollow sponsored"
+    >
+      START NOW
+    </a>
 
     <section class="faq">
-      <h2 class="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+      <h2 class="faq-title">
+        FREQUENTLY ASKED QUESTIONS
+      </h2>
 
       <div class="faq-item">
         <h3>What are Deals?</h3>
-        <p>Deals are simple tasks you complete to earn rewards. This could be downloading an app, completing a survey, or signing up for a trial subscription using the links provided. Each deal has specific steps—once you reach the required level or complete the task, you'll earn a reward.</p>
+        <p>
+          Deals are tasks such as downloading apps,
+          completing surveys, or signing up for trial
+          subscriptions. Each deal has its own
+          eligibility requirements.
+        </p>
       </div>
 
       <div class="faq-item">
         <h3>How many Deals do I need to complete?</h3>
-        <p>To qualify for your Costco gift card, you'll need to complete 2-5 deals to unlock the full $700 gift card value. Make sure you finish all the required deals from start to finish. The more deals you complete, the closer you get to your full reward.</p>
+        <p>
+          The number of required deals depends on the
+          reward provider's current terms. Review all
+          requirements before participating.
+        </p>
       </div>
 
       <div class="faq-item">
-        <h3>What countries is this available in?</h3>
-        <p>This offer is available in the United States, Canada, Australia, and the United Kingdom.</p>
+        <h3>Is the gift card guaranteed?</h3>
+        <p>
+          No. Rewards are subject to eligibility,
+          completion of required deals, and the
+          provider's terms and conditions.
+        </p>
       </div>
     </section>
 
-    <footer>© 2026 All rights reserved.</footer>
+    <footer>
+      Independent promotional website.
+      Not affiliated with or endorsed by Costco.
+      <p>© 2026 CostSaves. All rights reserved.</p>
+    </footer>
+
   </main>
-  <script>
-    document.getElementById('start-btn').addEventListener('click', function() {
-      const targetUrl = this.getAttribute('data-url');
-      if (targetUrl) {
-        window.location.href = targetUrl;
-      }
-    });
-  </script>
 </body>
 </html>
